@@ -22,7 +22,7 @@ resource "aws_instance" "dove-inst" {
   provisioner "remote-exec" {
     inline = [
       "chmod +x /tmp/web.sh",
-      "sudo sh /tmp/web.sh"
+      "sudo sh /tmp/web.sh",
     ]
   }
 
